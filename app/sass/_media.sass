@@ -1,0 +1,80 @@
+@media (max-width:767px) 
+  html
+    font-size: 5px
+  .btn
+    width: 100%
+    text-align: center
+  .top-nav
+    &_btn
+      display: block
+    &_menu
+      flex-direction: column
+      display: none
+      &__active
+        display: flex
+        margin-bottom: 0
+      li
+        line-height: 2
+        a
+          &::after
+            display: none
+  .left-sidebar
+    &_object
+      display: none
+    &_btn
+      display: block
+    &_menu
+      display: none
+      &__active
+        display: block
+  .copy
+    text-align: center
+    small
+      margin: 36px auto
+  .footer
+    &-contacts
+      text-align: left
+
+@media (min-width:767px) and (max-width:991px) 
+  html
+    font-size: 5px
+  .top-nav
+    &_btn
+      display: block
+    &_menu
+      display: none
+      &__active
+        display: flex
+        margin-bottom: 0
+        justify-content: space-around
+      li
+        margin-right: 0
+        line-height: 2
+        a
+          &::after
+            display: none
+  .left-sidebar
+    &_object
+      display: none
+    &_btn
+      display: block
+    &_menu
+      display: none
+      &__active
+        display: block
+  .footer
+    &-contacts
+      text-align: left
+  .directions
+    &-block
+      h3
+        font-size: 3rem
+@media (min-width:992px) and (max-width:1199px) 
+  .top-nav
+    &_menu
+      font-size: 1.3rem
+  .directions
+    &-block
+      h3
+        font-size: 1.3rem
+
